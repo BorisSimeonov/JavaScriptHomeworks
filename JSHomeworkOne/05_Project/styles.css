@@ -1,0 +1,54 @@
+body{
+    background-color: silver;
+}
+.gameSec{
+    position: relative;
+    margin: 10px auto;
+    padding: 0px;
+    width: 270px;
+    height: 270px;
+    cursor: pointer;
+    border: 4px solid darkslategray;
+}
+.row{
+    box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+    display: flex;
+}
+.cell{
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 80px;
+    display: inline-block;
+}
+
+.row:nth-of-type(2){
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.row > .cell:nth-of-type(2){
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+section:nth-of-type(2){
+    text-align: center;
+    font-weight: bold;
+}
+.resetBtn{
+    text-align: center;
+    padding: 10px;
+}
+.resetBtn button{
+    padding: 15px;
+    width: 250px;
+    font-size: 24px;
+    font-weight: bold;
+    color: greenyellow;
+    background-color: darkslategrey;
+}

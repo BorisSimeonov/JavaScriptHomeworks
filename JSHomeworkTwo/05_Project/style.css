@@ -1,0 +1,40 @@
+#wrapper{
+    width: 550px;
+    height: 350px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid gray;
+}
+#wrapper div{
+    height: 170px;
+    width: 100%;
+}
+#wrapper input{
+    background-color: #1d4a70;
+    padding-left: 10px;
+    height: 50px;
+    color: orange;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+}
+
+#wrapper button{
+    margin: 10% auto;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+#wrapper div:nth-of-type(2){
+    background-color: #1d4a70;
+}
+#wrapper div > p{
+    color: orange;
+    font-size: 24px;
+    padding-left: 10px;
+    text-align: left;
+}

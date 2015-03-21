@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple Clock</title>
+</head>
+<body>
+<section>
+    <h1>The current time is:</h1>
+    <p id="clockDisp"></p>
+    <script type="text/javascript">
+        function pad(num) {
+            var size = 2;
+            var checker = num + "";
+            while (checker.length < size) checker = "0" + checker;
+            return checker;
+        }
+        function setTime() {
+            var d = new Date();
+            var cHours = pad(d.getHours());
+            var cMin = pad(d.getMinutes());
+            var cSec = pad(d.getSeconds());
+            var cMill = Math.floor(d.getMilliseconds() / 100);
+            document.getElementById("clockDisp").innerHTML = cHours + ":" + cMin + ":" + cSec + "   millisec.(x100): " + cMill;
+        }
+        setInterval("setTime()", 100);
+    </script>
+</section>
+</body>
+</html>

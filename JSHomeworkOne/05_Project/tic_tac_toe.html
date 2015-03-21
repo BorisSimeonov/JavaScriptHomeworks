@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript" src="tic-tac.js"></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+<section class="gameSec">
+    <div class="row">
+        <div class="cell" id="11" onclick="onClick(this.id)"></div>
+        <div class="cell" id="12" onclick="onClick(this.id)"></div>
+        <div class="cell" id="13" onclick="onClick(this.id)"></div>
+    </div>
+    <div class="row">
+        <div class="cell" id="21" onclick="onClick(this.id)"></div>
+        <div class="cell" id="22" onclick="onClick(this.id)"></div>
+        <div class="cell" id="23" onclick="onClick(this.id)"></div>
+    </div>
+    <div class="row">
+        <div class="cell" id="31" onclick="onClick(this.id)"></div>
+        <div class="cell" id="32" onclick="onClick(this.id)"></div>
+        <div class="cell" id="33" onclick="onClick(this.id)"></div>
+    </div>
+</section>
+<section id="result">RESULT</section>
+<section class="resetBtn"><button onclick="clearAll()">Clear All</button></section>
+</body>
+</html>
