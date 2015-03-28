@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script type="text/javascript" src="js.js"></script>
+    <title>Webinar Registration Form</title>
+</head>
+<body>
+<div id="wrapper">
+    <section id="formContainer">
+        <form action="">
+            <h1>Регистрация за уебиар</h1>
+            <label for="username" > Име и Фамилия:<span class="redAster">*</span> </label>
+            <input id="username" name="username" type="text" />
+
+            <label for="address" > Адрес:</label>
+            <input id="address" name="address" type="text" />
+
+            <label for="residence" > Населено място:</label>
+            <input id="residence" name="residence" type="text" />
+
+            <label for="postCode" > Пощенски код:</label>
+            <input id="postCode" name="postCode" type="text" />
+
+            <label for="email" > E-mail:<span class="redAster">*</span> </label>
+            <input id="email" name="email" type="text" />
+
+            <label for="phone" > Телефон:<span class="redAster">*</span> </label>
+            <input id="phone" name="phone" type="text" />
+
+            <label for="date" > Дата на семинара:<span class="redAster">*</span> </label>
+            <input id="date" name="date" type="date" placeholder="dd/mm/yyyy"/>
+
+            <div id="fiscalBox">
+                <input id="fiscalCheck" name="fiscalCheck" type="checkbox" onchange="fiscalFieldSet(this.id)"/>
+                <label for="fiscalCheck">Желая фактура</label>
+                <div id="fiscalField">
+
+                </div>
+            </div>
+
+            <div id="btnField">
+                <button type="submit">Регистрирай се</button>
+                <button type="submit">Изчисти</button>
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+</html>

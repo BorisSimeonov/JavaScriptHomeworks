@@ -1,0 +1,39 @@
+#formContainer{
+    margin: 0px auto;
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+}
+
+#formContainer h1{
+    align-self: center;
+}
+
+#formContainer form{
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.redAster{
+    color: red;
+}
+
+#fiscalField{
+    /*optional for drop-down or fixed*/min-height: 230px;
+}
+
+#btnField{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+#fiscalField{
+    box-sizing: border-box;
+}
+.fullInp{
+    width: 98%;
+    margin: 0px;
+}
